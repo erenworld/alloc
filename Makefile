@@ -166,6 +166,30 @@ alloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/alloc.dir/build.make CMakeFiles/alloc.dir/alloc.c.s
 .PHONY : alloc.c.s
 
+trace.o: trace.c.o
+.PHONY : trace.o
+
+# target to build an object file
+trace.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/alloc.dir/build.make CMakeFiles/alloc.dir/trace.c.o
+.PHONY : trace.c.o
+
+trace.i: trace.c.i
+.PHONY : trace.i
+
+# target to preprocess a source file
+trace.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/alloc.dir/build.make CMakeFiles/alloc.dir/trace.c.i
+.PHONY : trace.c.i
+
+trace.s: trace.c.s
+.PHONY : trace.s
+
+# target to generate assembly for a file
+trace.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/alloc.dir/build.make CMakeFiles/alloc.dir/trace.c.s
+.PHONY : trace.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,6 +203,9 @@ help:
 	@echo "... alloc.o"
 	@echo "... alloc.i"
 	@echo "... alloc.s"
+	@echo "... trace.o"
+	@echo "... trace.i"
+	@echo "... trace.s"
 .PHONY : help
 
 
